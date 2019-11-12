@@ -1,0 +1,14 @@
+<h1>All tasks:</h1>
+
+ <% @tasks.each do |task| %>
+    <!-- link_to TEXT, PATH -->
+    <li> <%= link_to task.title, task_path(task.id) %> </li>
+  <% end %>
+
+
+<!-- // link
+
+link_to will become a a tag
+/tasks/4
+task_path(id)
+ -->
